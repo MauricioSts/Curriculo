@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Mauricio Santos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+        }
+
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 16px;
+            top: 32px;
+            height: calc(100% - 32px);
+            width: 2px;
+            background-color: #3b82f6;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.4);
+        }
+    </style>
+</head>
+
+<body class="text-gray-800">
+    <div class="max-w-4xl mx-auto my-8 p-6 bg-white rounded-lg shadow-lg">
+        <!-- Header -->
+        <header class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
+            <div>
+                <h1 class="text-3xl font-bold text-blue-600 mb-1">Mauricio Santos</h1>
+                <h2 class="text-xl text-gray-600 mb-2">Desenvolvedor Frontend & Suporte de TI</h2>
+                <p class="text-gray-500">Buscando oportunidades na área de Tecnologia da Informação</p>
+            </div>
+        </header>
+
+        <!-- Contact Info -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 p-4 bg-blue-50 rounded-lg">
+            <div class="flex items-center gap-3">
+                <i class="fas fa-envelope text-blue-600"></i>
+                <span>contatomauriciosts@gmail.com</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <i class="fas fa-phone text-blue-600"></i>
+                <span>994255616</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <i class="fab fa-linkedin text-blue-600"></i>
+                <span>www.linkedin.com/in/mauriciosts</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <i class="fab fa-github text-blue-600"></i>
+                <span><a href="https://github.com/MauricioSts" target="_blank">github.com/MauricioSts</a></span>
+            </div>
+        </div>
+
+        <!-- Summary -->
+        <section class="mb-8">
+            <h3 class="text-xl font-semibold text-blue-600 border-b border-blue-200 pb-2 mb-4 flex items-center gap-2">
+                <i class="fas fa-user"></i> Sobre
+            </h3>
+            <p class="text-gray-700">
+                Profissional de TI com experiência diversificada em suporte técnico, desenvolvimento web e mobile.
+                Atuei em projetos acadêmicos com realidade aumentada, desenvolvimento de sistemas para negócios locais
+                e em startups de tecnologia. Apaixonado por resolver problemas e aprender novas tecnologias.
+            </p>
+        </section>
+
+        <!-- Experience -->
+        <section class="mb-8">
+            <h3 class="text-xl font-semibold text-blue-600 border-b border-blue-200 pb-2 mb-4 flex items-center gap-2">
+                <i class="fas fa-briefcase"></i> Experiência Profissional
+            </h3>
+
+            <div class="space-y-6 relative">
+                <!-- Current Experience -->
+                <div class="timeline-item relative pl-10">
+                    <div
+                        class="absolute left-0 top-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h4 class="text-lg font-semibold">Programa "Arroz da Gente" - IFRN (Projeto de Extensão)</h4>
+                    <div class="flex flex-wrap gap-2 text-sm text-gray-500 mb-2">
+                        <span class="bg-blue-100 px-2 py-1 rounded">Flutter</span>
+                        <span class="bg-blue-100 px-2 py-1 rounded">Mobile</span>
+                        <span class="bg-blue-100 px-2 py-1 rounded">Mentoria</span>
+                    </div>
+                    <p class="text-gray-600 mb-1">Voluntário | [Ano Atual]</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1 pl-1">
+                        <li>Desenvolvimento de aplicativo mobile com Flutter para o programa de extensão</li>
+                        <li>Orientar alunos do 4º ano do IFRN no desenvolvimento mobile</li>
+                        <li>Implementação de features e correção de bugs</li>
+                    </ul>
+                </div>
+
+                <!-- Startup Experience -->
+                <div class="timeline-item relative pl-10">
+                    <div
+                        class="absolute left-0 top-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h4 class="text-lg font-semibold">Desenvolvedor - Inspire Logic</h4>
+                    <div class="flex flex-wrap gap-2 text-sm text-gray-500 mb-2">
+                        <span class="bg-blue-100 px-2 py-1 rounded">Flutter</span>
+                        <span class="bg-blue-100 px-2 py-1 rounded">Frontend</span>
+                        <span class="bg-blue-100 px-2 py-1 rounded">Vue.js</span>
+                        <span class="bg-blue-100 px-2 py-1 rounded">PostgreSQL</span>
+                    </div>
+                    <p class="text-gray-600 mb-1">Startup | Primeiro Semestre de 2025</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1 pl-1">
+                        <li>Desenvolvimento de interfaces com Flutter para aplicativos multiplataforma</li>
+                        <li>Implementação de features para aplicações web frontend utilizando Vue.js</li>
+                        <li>Gerenciamento de banco de dados com PostgreSQL</li>
+                        <li>Participação em reuniões de planejamento e revisão de código</li>
+                    </ul>
+                </div>
+
+                <!-- Freelance Experience -->
+                <div class="timeline-item relative pl-10">
+                    <div
+                        class="absolute left-0 top-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white">
+                        <i class="fas fa-hamburger"></i>
+                    </div>
+                    <h4 class="text-lg font-semibold">Desenvolvedor Freelancer - Hamburgueria</h4>
+                    <div class="flex flex-wrap gap-2 text-sm text-gray-500 mb-2">
+                        <span class="bg-blue-100 px-2 py-1 rounded">JavaScript</span>
+                        <span class="bg-blue-100 px-2 py-1 rounded">Tailwind CSS</span>
+                        <span class="bg-blue-100 px-2 py-1 rounded">Catálogo Digital</span>
+                    </div>
+                    <p class="text-gray-600 mb-1">Freelancer | 2024</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1 pl-1">
+                        <li>Desenvolvimento de catálogo digital responsivo utilizando JavaScript e Tailwind CSS</li>
+                        <li>Implementação de filtros e busca para produtos</li>
+                        <li>Otimização para dispositivos móveis</li>
+                    </ul>
+                </div>
+
+                <!-- Internship -->
+                <div class="timeline-item relative pl-10">
+                    <div
+                        class="absolute left-0 top-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h4 class="text-lg font-semibold">Estagiário de TI - Secretaria de Infraestrutura do RN</h4>
+                    <div class="flex flex-wrap gap-2 text-sm text-gray-500 mb-2">
+                        <span class="bg-blue-100 px-2 py-1 rounded">Suporte Técnico</span>
+                        <span class="bg-blue-100 px-2 py-1 rounded">Redes</span>
+                        <span class="bg-blue-100 px-2 py-1 rounded">Manutenção</span>
+                    </div>
+                    <p class="text-gray-600 mb-1">Estágio | 2023 - 2025</p>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1 pl-1">
+                        <li>Suporte técnico aos usuários da secretaria</li>
+                        <li>Manutenção de equipamentos de informática</li>
+                        <li>Configuração de redes e sistemas</li>
+                        <li>Documentação de processos técnicos</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="mb-8">
+            <h3 class="text-xl font-semibold text-blue-600 border-b border-blue-200 pb-2 mb-4 flex items-center gap-2">
+                <i class="fas fa-graduation-cap"></i> Educação e Pesquisa
+            </h3>
+
+            <div class="space-y-6">
+                <div class="flex items-start">
+                    <div
+                        class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white mr-4 shrink-0">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold">Sistemas para Internet - IFRN</h4>
+                        <p class="text-gray-600 mb-1">2024 - 2026 (Cursando)</p>
+                        <p class="text-gray-700">Graduação em Sistemas para Internet no Instituto Federal do Rio Grande
+                            do Norte.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start">
+                    <div
+                        class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white mr-4 shrink-0">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold">Projeto de Pesquisa em Realidade Aumentada - IFRN</h4>
+                        <div class="flex flex-wrap gap-2 text-sm text-gray-500 mb-2">
+                            <span class="bg-blue-100 px-2 py-1 rounded">C#</span>
+                            <span class="bg-blue-100 px-2 py-1 rounded">RA</span>
+                            <span class="bg-blue-100 px-2 py-1 rounded">Pesquisa</span>
+                        </div>
+                        <p class="text-gray-600 mb-1">2024 - 2025</p>
+                        <p class="text-gray-700">
+                            Participação em projeto de pesquisa desenvolvendo soluções de Realidade Aumentada utilizando
+                            C#.
+                            Desenvolvimento de protótipos e aplicações demonstrativas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="mb-8">
+            <h3 class="text-xl font-semibold text-blue-600 border-b border-blue-200 pb-2 mb-4 flex items-center gap-2">
+                <i class="fas fa-code"></i> Habilidades Técnicas
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="skill-card p-4 border border-gray-200 rounded-lg transition-all">
+                    <h4 class="font-semibold text-blue-600 mb-2"><i class="fas fa-mobile-alt mr-2"></i>Mobile</h4>
+                    <ul class="space-y-1">
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-blue-600 mr-2"></div> Flutter
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-blue-600 mr-2"></div> Dart
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-card p-4 border border-gray-200 rounded-lg transition-all">
+                    <h4 class="font-semibold text-blue-600 mb-2"><i class="fas fa-globe mr-2"></i>Web</h4>
+                    <ul class="space-y-1">
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-blue-600 mr-2"></div> JavaScript
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-blue-600 mr-2"></div> HTML/CSS
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-blue-600 mr-2"></div> Tailwind CSS
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-card p-4 border border-gray-200 rounded-lg transition-all">
+                    <h4 class="font-semibold text-blue-600 mb-2"><i class="fas fa-laptop-code mr-2"></i>Backend</h4>
+                    <ul class="space-y-1">
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-blue-600 mr-2"></div> C#
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-blue-600 mr-2"></div> PostgreSQL
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-card p-4 border border-gray-200 rounded-lg transition-all">
+                    <h4 class="font-semibold text-blue-600 mb-2"><i class="fas fa-network-wired mr-2"></i>TI</h4>
+                    <ul class="space-y-1">
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-blue-600 mr-2"></div> Suporte Técnico
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-blue-600 mr-2"></div> Redes
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-blue-600 mr-2"></div> Manutenção
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-card p-4 border border-gray-200 rounded-lg transition-all">
+                    <h4 class="font-semibold text-blue-600 mb-2"><i class="fas fa-language mr-2"></i>Idiomas</h4>
+                    <ul class="space-y-1">
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-blue-600 mr-2"></div> Português - Nativo
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-blue-600 mr-2"></div> Inglês - Médio
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-card p-4 border border-gray-200 rounded-lg transition-all">
+                    <h4 class="font-semibold text-blue-600 mb-2"><i class="fas fa-user-tie mr-2"></i>Soft Skills</h4>
+                    <ul class="space-y-1">
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-blue-600 mr-2"></div> Trabalho em Equipe
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-blue-600 mr-2"></div> Resolução de Problemas
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 rounded-full bg-blue-600 mr-2"></div> Comunicação
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
